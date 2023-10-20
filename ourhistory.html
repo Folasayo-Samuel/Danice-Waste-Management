@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Our History</title>
+  
+ </head>
+<body>  
+	<style>	#imgg{
+		transition: transform .4s;
+}
+#imgg:hover{
+	
+	transform: scale(1.5);
+}
+.history-wrapper {
+	position: relative;
+	padding: 50px 0 50px;
+}
+.history-wrapper:after {
+	content: "";
+	width: 3px;
+	height: 100%;
+	background: #ededed;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+}
+.history-wrapper .title-wrap {
+	opacity: 0.2;
+	padding: 100px 0 0 45px;
+}
+.history-wrapper .timeline-box {
+	position: relative;
+}
+.one-of-two {
+	width: 50%;
+	float: left;
+}
+.history-wrapper .timeline-box:not(:last-child) {
+	margin-bottom: 140px;
+}
+.timeline-box:nth-child(2n) {
+	padding: 0 0 0 140px;
+}
+.history-wrapper .timeline-box:nth-child(2n) {
+	margin-bottom: 140px;
+}
+.history-wrapper .timeline-box:nth-child(2n + 1) {
+	margin-top: -24%;
+	text-align: right;
+}
+.timeline-box:nth-child(2n + 1) {
+	padding: 0 140px 0 0;
+}
+.year {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	background: #fff;
+	top: 30%;
+	color: #3b3b3b;
+	transform: translateY(-50%);
+	border: 1px solid #dbdbdb;
+	line-height: 100px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+}
+.timeline-box:nth-child(2n) .year {
+	left: 25px;
+}
+.timeline-box:nth-child(2n + 1) .year {
+	right: 32px;
+}
+.year:before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-left: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	background: #ffffff;
+	position: absolute;
+	top: 50%;
+	margin-top: -7.5px;
+}
+.timeline-box:nth-child(2n) .year:before {
+	left: -8px;
+	transform: rotate(45deg);
+}
+.timeline-box:nth-child(2n + 1) .year:before {
+	right: -8px;
+	transform: rotate(-135deg);
+}
+.timeline-box:after {
+	content: "";
+	width: 3px;
+	height: 0;
+	background: #ffa200;
+	position: absolute;
+	top: 30%;
+	transform: translateY(-50%);
+	z-index: 1;
+	transition: all 0.3s ease-in-out;
+}
+.timeline-box:nth-child(2n):after {
+	left: -1.5px;
+}
+.timeline-box:nth-child(2n + 1):after {
+	right: -1.5px;
+}
+.timeline-box:hover:after {
+	height: 97px;
+}
+.timeline-box:before {
+	content: "";
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	border: 5px solid #ededed;
+	position: absolute;
+	background: #fff;
+	z-index: 2;
+	top: 30%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease-in-out;
+}
+.timeline-box:nth-child(2n):before {
+	left: -10.5px;
+}
+.timeline-box:nth-child(2n + 1):before {
+	right: -10.5px;
+}
+.timeline-box:hover:before {
+	border: 5px solid #ffa200;
+}
+@media screen and (max-width: 1199px) {
+	.year {
+		width: 90px;
+		height: 90px;
+		line-height: 90px;
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.history-wrapper {
+		padding: 30px 0 30px;
+	}
+	.history-wrapper .title-wrap {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	.title-wrap.one-of-two {
+		width: 100%;
+	}
+	.history-wrapper:after {
+		left: 0;
+	}
+	.history-wrapper .timeline-box:nth-child(2n) {
+		padding: 0 0 0 140px;
+	}
+	.history-wrapper .timeline-box:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.timeline-box.one-of-two,
+	.timeline-box .img img {
+		width: 100%;
+	}
+	.history-wrapper .timeline-box:nth-child(2n + 1) {
+		margin-top: 0;
+		text-align: left;
+	}
+	.timeline-box:nth-child(2n + 1) .year {
+		left: 32px;
+	}
+	.timeline-box:nth-child(2n + 1):before {
+		left: -10.5px;
+	}
+	.timeline-box:nth-child(2n + 1) .year:before {
+		left: -8px;
+		transform: rotate(45deg);
+	}
+	.timeline-box:nth-child(2n + 1):after {
+		left: -1.5px;
+	}
+	.history-wrapper .timeline-box:nth-child(2n + 1) {
+		margin-top: 0;
+		text-align: left;
+	}
+	.timeline-box:nth-child(2n + 1) {
+		padding: 0 0 0 140px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.history-wrapper:after,
+	.year,
+	.timeline-box:before {
+		display: none;
+	}
+	.history-wrapper {
+		padding: 0;
+	}
+	.history-wrapper .timeline-box:nth-child(2n),
+	.history-wrapper .timeline-box:nth-child(2n + 1) {
+		padding: 0 15px;
+	}
+	.history-wrapper .timeline-box:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.timeline-box .content {
+		text-align: center;
+	}
+	.timeline-box:nth-child(2n):after,
+	.timeline-box:nth-child(2n + 1):after {
+		display: none;
+	}
+}</style>
+  <!-- navbar with logo -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-success">
+    <div class="container-fluid ">
+      <a class="navbar-brand  link-light" href="#">
+        <img src="./img2/IMG_2444.PNG" alt="Logo" width="50" height="70" class="d-inline-block  ">
+		 Danice Waste Management 
+      </a>
+          <button  class="navbar-toggler border-success bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon border-success bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse  ps-5" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ps-5">
+            <a id="naan" class="nav-link  active link-light" aria-current="page" href="./index.html">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown ps-5">
+            <a id="naan" class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu w-50 text-center bg-success rounded-5" aria-labelledby="navbarDropdownMenuLink">
+              <li><a id="naan" class="dropdown-item rounded-5" href="./Ourhistory.html">Our History</a></li>
+              <li><a id="naan" class="dropdown-item rounded-5" href="./Gallery.html">Gallery</a></li>
+			  <li><a id="naan" class="dropdown-item rounded-5" href="./Recycle.html">Recycle</a></li>              
+        </ul> 
+          </li>
+              <li class="nav-item ps-5">
+            <a id="naan" class="nav-link  text-light" href="./Services.html" >Services</a>
+                  </li>
+                  <li class="nav-item ps-5">
+                    <a id="naan" class="nav-link text-light" href="./Contact.html">Contact</a>
+                    </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- image and text-->
+  <div class="home text-center pt-5 ">
+	<img src="./img/danicewaste-22092022-0002.jpg" alt="" class="w-75"  >
+</div>
+<div class="card  pt-5 shadow-lg " >
+	<div class="container card-body pt-5">
+		<header class="text-center fs-1 fw-bold ">About Us</header>
+		<p > <span class="fs-1 fw-bold"> D</span>anice was founded in 2005.We are licensed by the City of Tshwane to Collect Waste and Recycling , we are also Members of Institute of Waste Management  of South Africa ( IWMSA)
+			Our passion for the clean  and green environments  puts us in the fore front of the  waste management practices and recycling business in SA. We provide unparalleled waste collection and recycling  services than any other competitor out there. 
+			We have developed a system over the years on how we can effectively serve our clients’ demand with modern tools and a high level of professionalism.
+			At the core of our business is a deep passion for cleanliness and a love for green economy.
+			Danice Waste Management and Recycling has  consistent driven the need for Job creation through our recycling programs, we are the only Waste Collection Company in Tshwane that offers both Waste Collection and Recycling programs in the inner city.
+			Our Recycling Program has enabled us to create more employment as compared to our competitors.  because we offer Recycling with Waste Collection, we need 36 workers to complete the Waste Collection and Disposal cycle, as compared to our competitors who only require 6 workers to complete only the waste collection cycle.
+			 Our core values of   Tolerance and understanding among all staff and our business partners.
+			Our mission is to be reduce the unemployment rate in our community by engaging them in our recycling programs.
+			We employ…
+			At Danice, we put our best foot forward when it comes to Waste Management and Recycling and that’s why we say” Nobody does it Better than us”.
+			</p>
+			
+	</div>
+</div>
+<br class="pb-5">
+<!-- footer -->
+<section id="foot" class="deneb_cta">
+
+</section>
+<footer class="deneb_footer shadow p-3 mb-5 bg-body rounded-3 bg-light">
+	<div class="widget_wrapper" style="background-image: url(http://demo.tortoizthemes.com/deneb-html/deneb-ltr/assets/images/footer_bg.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="widget widegt_about">
+						<div class="widget_title">
+							<img src="assets/images/logo_1.png" class="img-fluid" alt="">
+						</div>
+						<p class="fs-3">Danice Waste Management
+              We offer our services from Monday to Saturday including public holidays.
+              </p>
+						<ul class="social">
+							<li><a href="https://m.facebook.com/danicewaste?eav=AfaKYa-sR5z1S_n9BkfroJ4LO_ql6CTxW0Ml6esW-eScTomgb9KBl-sObobE5XtwMZI&tsid=0.5509832445107193&source=result"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="https://instagram.com/danicewaste?igshid=NmNmNjAwNzg="><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 ps-5 col-md-6 col-sm-12">
+					<div class="widget widget_link">
+						<div class="widget_title">
+							<h4>Links</h4>
+						</div>
+						<ul class="fs-5">
+							<li class=""><a class="link-dark text-decoration-none" href="./Ourhistory.html">About Us</a></li>
+							<li><a class="link-dark text-decoration-none" href="./Services.html">Services</a></li>
+							<li><a class="link-dark text-decoration-none" href="./Contact.html">Contact</a></li>
+							<li><a  class="link-dark text-decoration-none" href="./index.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 align-content-end col-md-6 col-sm-12">
+					<div class="widget widget_contact">
+  						<div class="widget_title text-center">
+							<h4>Contact Us</h4>
+						</div>
+						<div class="contact_info ps-5">
+							<div class="single_info ps-5">
+								<div class="icon d-flex ">
+									<i class="fas fa-phone-alt "></i>
+								</div>
+								<div class="info  ">
+									<p class="fw-bold ">
+                    <a class="link-dark" href="tel:+(27)82 831 7727">+27 (82) 831 7727</a></p>
+																	</div>
+							</div>
+              
+							<div class="single_info ps-5">
+								<div class="icon d-flex">
+									<i class="fas fa-envelope"></i>
+								</div>
+								<div class="info">
+									<p class="fw-bold ">
+                    <a class="link-dark" href="mailto:admin@danice.Co.Za">admin@danice.Co.Za</a></p>
+									
+								</div>
+							</div>
+							<div class="single_info px-5">
+								<div class="icon ">
+									<i class="fas fa-map-marker-alt"></i>
+								</div>
+								<div class="info">
+									<tt><p class="fw-bold "><a class="link-dark" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14364.94395515526!2d28.291669!3d-25.828768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b5d00a11b086e2c!2sDanice!5e0!3m2!1sen!2sng!4v1663966788200!5m2!1sen!2sng"> 89,Tanya Street, Grootfontein C.E,<span> Pretoria.</span>0056</a></p></tt>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright_area rounded-3 ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="copyright_text ">
+						<p>All rights reserved.  &copy;Danice Waste Management 2022</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+</html

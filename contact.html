@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
+  
+ </head>
+<body>  
+  <style>
+    body{
+      background-color: #fff;
+    }
+    h1{
+      font-size: 60px;
+      font-weight: 600 ;
+      font-family: jost, sans-serif;
+      display: block;
+      clear: both;
+    }
+   .social li {
+    display: inline-block;
+   }
+   .social li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:-ms-linear-gradient(0deg, #2B4A2B 0%, green 50%,#129254 50%) ;
+    color: #2B4A2B;
+    font-size: 30px;
+    -webkit-transition: all all 0.5s ease-out 0s;
+    -moz-transition: all all 0.5s ease-out 0s;
+    -ms-transition: all all 0.5s ease-out 0s;
+    -o-transition: all all 0.5s ease-out 0s;
+    transition: all all 0.5s ease-out 0s;
+}
+
+.social li a:hover,
+.social li a:focus {
+    background-image: -moz-linear-gradient(0deg, #2B4A2B 10%, blue 100%);
+    background-image: -webkit-linear-gradient(0deg, #2B4A2B 0%, red 75%);
+    background-image: -ms-linear-gradient(0deg, #2B4A2B 0%, green 100%);
+    color: #fff;
+    box-shadow: 2.5px 4.33px 15px 0px #2E3092;
+}
+/* contact */
+#bnsn{
+    width: 75px;
+    height: 35px;
+   
+   }
+h1 {
+font-family: 'jost', sans-serif, ;
+font-weight: 600;
+font-size: 72px;
+color: white;
+text-align: center;
+}
+
+h4 {
+font-family: 'Roboto', sans-serif, 'arial';
+font-weight: 400;
+font-size: 20px;
+color: #9b9b9b;
+line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+font-size: 0.75em;
+color: #999;
+top: -5px;
+-webkit-transition: all 0.225s ease;
+transition: all 0.225s ease;
+}
+
+.styled-input {
+float: left;
+width: 293px;
+margin: 1rem 0;
+position: relative;
+border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+.styled-input {
+    width:100%;
+}
+}
+
+.styled-input label {
+color: #999;
+padding: 1.3rem 30px 1rem 30px;
+position: absolute;
+top: 10px;
+left: 0;
+-webkit-transition: all 0.25s ease;
+transition: all 0.25s ease;
+pointer-events: none;
+}
+
+.styled-input.wide { 
+width: 650px;
+max-width: 100%;
+
+}
+
+input,
+textarea {
+padding: 30px;
+border: 1;
+width: 100%;
+font-size: 1rem;
+background-color: #2d2d2d;
+color: white;
+border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+width: 100%;
+-webkit-transition: all 0.075s ease;
+transition: all 0.075s ease;
+}
+
+textarea {
+width: 100%;
+min-height: 14em;
+}
+
+.input-container {
+width: 650px;
+max-width: 100%;
+margin: 20px auto 25px auto;
+margin-bottom: 100px;
+}
+.submit-btn {
+
+padding: 7px 35px;
+border-radius: 60px;
+display: inline-block;
+background-color: blue;
+color: white;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+          0 2px 10px 0 rgba(0,0,0,0.07);
+-webkit-transition: all 300ms ease;
+transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+transform: translatex(5px);
+box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+          0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+.submit-btn {
+    width:100%;
+    float: none;
+    text-align:center;
+}
+}
+
+input[type=checkbox] + label {
+color: #ccc;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
+}
+  </style>
+  
+<!-- navbar with logo -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-success">
+    <div class="container-fluid ">
+      <a class="navbar-brand  link-light" href="#">
+        <img src="./img2/IMG_2444.PNG" alt="Logo" width="50" height="70" class="d-inline-block  ">
+		 Danice Waste Management 
+      </a>
+          <button  class="navbar-toggler border-success bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon border-success bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse  ps-5" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ps-5">
+            <a id="naan" class="nav-link  active link-light" aria-current="page" href="./index.html">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown ps-5">
+            <a id="naan" class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu w-50 text-center bg-success rounded-5" aria-labelledby="navbarDropdownMenuLink">
+              <li><a id="naan" class="dropdown-item rounded-5" href="./Ourhistory.html">Our History</a></li>
+              <li><a id="naan" class="dropdown-item rounded-5" href="./Gallery.html">Gallery</a></li>
+			  <li><a id="naan" class="dropdown-item rounded-5" href="./Recycle.html">Recycle</a></li>              
+        </ul> 
+          </li>
+              <li class="nav-item ps-5">
+            <a id="naan" class="nav-link  text-light" href="./Services.html" >Services</a>
+                  </li>
+                  <li class="nav-item ps-5">
+                    <a id="naan" class="nav-link text-light" href="./Contact.html">Contact</a>
+                    </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- body map and form-->
+  
+
+  <div id="bod" class="home ms-3 me-3 bg-success">
+    <div class="container-fluid">
+      <header class="text-center pb-5 mb-5"><h1>Contact Us</h1>
+      <p class="text-light">We'd Love to hear from you</p></header>
+    </div>
+  </div>
+  
+  <div class="row">
+  <div id="con" class=" col-md-4">
+    <H1 class="text-center ps-4 text-dark fw-bold">Easy ways to reach us! </H1>
+  </div>
+  
+  <div class="col-md-6  ">
+    
+    <p class="fs-4 pt-4 ms-5">You can connect with us to find out more and how to join the Danice team</p>
+    <div id="consoc" class="d-flex ">
+   <ul class="social">
+      <li><a href="https://m.facebook.com/danicewaste?eav=AfaKYa-sR5z1S_n9BkfroJ4LO_ql6CTxW0Ml6esW-eScTomgb9KBl-sObobE5XtwMZI&tsid=0.5509832445107193&source=result"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab   fa-twitter "></i></a></li>
+      <li><a href="https://instagram.com/danicewaste?igshid=NmNmNjAwNzg="><i class="fab fa-instagram"></i></a></li>
+      </div>
+  </ul>
+  </div>
+  
+  <section id="contact" class="contact pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5   align-items-stretch">
+              <header class="text-center "><h2>Contact Details</h2></header>
+                <div class="info">
+                  
+                  <div class="row col-6">
+                    
+                    <div class="address pb-5">
+                        <i style="color:blue ;" class='fas fa-map-marker-alt'></i>
+                        <h4 class="text-dark">Our Address:</h4>
+                        <p>89, Tanya Street, Grootfontein, <span> Pretoria.</span> 0056</p>
+                    </div>
+                    <div class="Mail pb-5">
+                      <i style="color:green ;" class="fas fa-envelope"></i>
+                      <h4>Mail Us</h4>
+                      <p>admin@danice.Co.Za</p>
+                      </div>
+
+                    <div class="phone pb-5">
+                        <i style="color:red ;" class="fas fa-phone-alt"></i>
+                        <h4>Call Us Today:</h4>
+                        <p>+27(82) 831 7727</p>
+                        </div>
+                      </div>
+                      </div>
+            </div>
+
+            <!-- form -->           
+            <div style="margin-top: 14px;" class="col-lg-6 col-md-4 align-items-stretch">
+                       <div  class="content ">
+                          <div class="d-flex home">
+                        <div class="container  ">
+                          
+                <div class="row  input-container">
+                        <div class="col-xs-12 ">
+                            <div class="styled-input  wide">
+                                <input class="bg-light text-dark" type="text" required />
+                                <label class="text-dark">Name</label> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input">
+                                <input class="bg-light text-dark " type="text" required />
+                                <label class="text-dark">Email</label> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input" style="float:right;">
+                                <input class="bg-light text-dark " type="text" required />
+                                <label class="text-dark">Phone Number</label> 
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <textarea class="bg-light text-dark" required></textarea>
+                                <label class="text-dark">Message</label>
+                            </div>
+                        </div>
+                        <div  class="col-xs-12 w-50">
+                          <button id="bnn"  type="button" class=" shadow p-2 mb-5  bg-body rounded text border-success rounded-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Send Message</button>
+                        </div>
+                 </div>
+                    </div>
+                  </div>
+              
+              </div>
+            
+            </div>
+          
+          </div>
+        </div>
+    </div> 
+</section>
+
+<div class="map pb-5">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.55407411107!2d28.3572524!3d-25.884150100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9543254fa1b8df%3A0xe8c76fc994654a86!2s89%20Tanya%20St%2C%20Grootfontein%20Country%20Estates%2C%200081!5e0!3m2!1sen!2sza!4v1664709226822!5m2!1sen!2sza" 
+  frameborder="0" style="border:0; width: 100%; height: 790px;  "></iframe>
+</div>
+
+<!-- footer -->
+<section id="foot" class="deneb_cta">
+
+</section>
+<footer class="deneb_footer shadow p-3 mb-5 bg-body rounded-3 bg-light">
+	<div class="widget_wrapper" style="background-image: url(http://demo.tortoizthemes.com/deneb-html/deneb-ltr/assets/images/footer_bg.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="widget widegt_about">
+						<div class="widget_title">
+							<img src="assets/images/logo_1.png" class="img-fluid" alt="">
+						</div>
+						<p class="fs-3">Danice Waste Management
+              We offer our services from Monday to Saturday including public holidays.
+              </p>
+						<ul class="social">
+							<li><a href="https://m.facebook.com/danicewaste?eav=AfaKYa-sR5z1S_n9BkfroJ4LO_ql6CTxW0Ml6esW-eScTomgb9KBl-sObobE5XtwMZI&tsid=0.5509832445107193&source=result"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="https://instagram.com/danicewaste?igshid=NmNmNjAwNzg="><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 ps-5 col-md-6 col-sm-12">
+					<div class="widget widget_link">
+						<div class="widget_title">
+							<h4>Links</h4>
+						</div>
+						<ul class="fs-5">
+							<li class=""><a class="link-dark text-decoration-none" href="./Ourhistory.html">About Us</a></li>
+							<li><a class="link-dark text-decoration-none" href="./Services.html">Services</a></li>
+							<li><a class="link-dark text-decoration-none" href="./Contact.html">Contact</a></li>
+							<li><a  class="link-dark text-decoration-none" href="./index.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 align-content-end col-md-6 col-sm-12">
+					<div class="widget widget_contact">
+  						<div class="widget_title text-center">
+							<h4>Contact Us</h4>
+						</div>
+						<div class="contact_info ps-5">
+							<div class="single_info ps-5">
+								<div class="icon d-flex ">
+									<i class="fas fa-phone-alt "></i>
+								</div>
+								<div class="info  ">
+									<p class="fw-bold ">
+                    <a class="link-dark" href="tel:+(27)82 831 7727">+27 (82) 831 7727</a></p>
+																	</div>
+							</div>
+              
+							<div class="single_info ps-5">
+								<div class="icon d-flex">
+									<i class="fas fa-envelope"></i>
+								</div>
+								<div class="info">
+									<p class="fw-bold ">
+                    <a class="link-dark" href="mailto:admin@danice.Co.Za">admin@danice.Co.Za</a></p>
+									
+								</div>
+							</div>
+							<div class="single_info px-5">
+								<div class="icon ">
+									<i class="fas fa-map-marker-alt"></i>
+								</div>
+								<div class="info">
+									<tt><p class="fw-bold "><a class="link-dark" href="#map"> 89,Tanya Street, Grootfontein C.E,<span> Pretoria.</span>0056</a></p></tt>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright_area rounded-3 ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="copyright_text ">
+						<p>All rights reserved.  &copy;Danice Waste Management 2022</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+
+
+</body>
+</html
